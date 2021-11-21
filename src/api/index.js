@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const projectsURL = 'http://localhost:5000/projects';
-const blogsURL = 'http://localhost:5000/blogs';
-// const projectsURL = 'https://lcusj.herokuapp.com/projects';
-// const blogsURL = 'https://lcusj.herokuapp.com/blogs';
+//const projectsURL = 'http://localhost:5000/projects';
+//const blogsURL = 'http://localhost:5000/blogs';
+const projectsURL = 'https://lcusj.herokuapp.com/projects';
+const blogsURL = 'https://lcusj.herokuapp.com/blogs';
 
 
 export const fetchProjects = () => axios.get(projectsURL);
