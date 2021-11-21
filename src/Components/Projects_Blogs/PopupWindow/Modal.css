@@ -1,0 +1,104 @@
+
+
+
+.modalBackground {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  background-color: rgba(0,0,0,0.2);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    z-index: 1;
+    /* z-index: -1; */
+
+}
+
+.modalContainer {
+  width: 90%;
+  height: 85%;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.75);;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  /* z-index: -1; */
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  /* margin-top: 10px; */
+  font-size: 30px;
+  /* color: antiquewhite; */
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: antiquewhite;
+}
+
+.modalContainer .body {
+  /* flex: 50%; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* font-size: 1.7rem; */
+  text-align: center;
+  /* height: 10%; */
+  
+}
+
+.modalContainer .body .img {
+  /* flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center; */
+  height: 600px;
+  padding-bottom: 10px;
+  
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color:antiquewhite ;
+  width: 70%;
+  text-align: center;
+  padding-left: 15%;
+}
+
+
+.modalContainer .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
