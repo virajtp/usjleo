@@ -6,7 +6,7 @@
 
 /* base styles */
 * {
-  font-family: 'Montserrat', cursive;
+  font-family: Helvetica  , sans-serif;
   /* background-image: url('./Components/images/black.jpg' ); */
  /* background-color: black; */
 
@@ -25,10 +25,18 @@ p{
 text-align: justify;
 }
 
+.line{
+  top: 80px;
+  position: fixed;
+  width: 99%;
+}
+
 
 .leftbar{
   width: 100%;
+  max-width:100%;
   height: 100%;
+  background-color: white;
   /* position: relative; */
   text-align: center;
   align-content: center;
@@ -38,7 +46,7 @@ text-align: justify;
 .sideCard{
   border: solid #000000;
   /* border: solid #ccc; */
-  border-width: 1px 1px 0 1px;
+  border-width: 1px 1px 1px 1px;
   border-radius: 30px;
   padding: 10px;
 
@@ -112,18 +120,113 @@ text-align: justify;
     font-size: 0.8em;
   }
   
-
-
-.content {
-  position:relative;
-  background-color: white;
-  margin-bottom: 30%;
+.content{
+  width: 100%;
 }
 
-@media only screen and (max-width: 700px){
+.contents {
+  position:relative;
+  /* background-color: white; */
+  /* margin-bottom: 30%; */
+  min-width: 100%;
+  /* align-content: center;
+  justify-content: center;
+  text-align: center; */
+  /* background-color: rgb(206, 218, 255) ; */
+  /* padding-bottom: 20px;
+  padding-top: 20px; */
+}
+
+/* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+
+.footer-is-primary{
+  position:relative;
+  width: 100%;
+  bottom: 0;
+  /* margin-top: 20px; */
+  background-color:#04396c;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  /* background-size: cover; */
+  /* padding: 10px; */
+  /* margin: 10px; */
+  /* padding-bottom: 5 px; */
+  /* margin-right: 10px; */
+  /* margin-right: 10px; */
+  
+}
+
+.social-container {
+  padding-bottom: 20px;
+}
+
+
+a.social {
+  opacity: 50%;
+  margin: 0 1rem;
+  transition: transform 250ms;
+  /* display: inline-block; */
+}
+
+a.social:hover {
+  /* transform: translateY(-2px); */
+  /* overflow:hidden; */
+  opacity: 130%;
+  transform: scale(1.5);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #0655ff;
+}
+
+a.linkedin {
+  color: #0667b6;
+}
+
+a.instagram {
+  color: rgb(255, 159, 159);
+}
+
+/* @media only screen and (max-width: 2100px){
   .content{
-    margin-bottom: 130%;
+    margin-bottom: 25%;
   }
+}
+
+@media only screen and (max-width: 1600px){
+  .content{
+    margin-bottom: 40%;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .content{
+    margin-bottom: 90%;
+  }
+} */
+
+@media only screen and (max-width: 700px){
+  /* .content{
+    margin-bottom: 90%;
+  } */
+  
+.leftbar{
+  width:200%;
+  height: 100%;
+}
+
+/* .footer-is-primary{
+  max-width: 97%;
+} */
 }
 
 @media only screen and (max-width: 480px){
@@ -133,14 +236,15 @@ text-align: justify;
 }
 
 
-
+/* 
 .navbar {
-  position: absolute;
+  position: fixed;
   text-decoration: rgb(0, 0, 0);
   color: #000000;
   text-align: center;
   top: 0;
   padding-bottom: 10px;
+  width: 100%;
 
 }
 .navbar h1 {
@@ -162,14 +266,20 @@ text-align: justify;
   color: #012444;
   scale: 120%;
   overflow: "hidden";
-}
+} */
 
 
 .home{
   /* background-position: bottom;
   background-color: black; */
+  
+  /* font-family: "Times New Roman", Times, serif; */
   text-align: center;
 }
+
+/* .h4{
+  font-family: "Times New Roman", Times, serif;
+} */
 
 /* .demo-wrap {
   position: relative;
@@ -229,12 +339,25 @@ text-align: justify;
   background-position: center;
   text-align: center;
   opacity: 0.5; */
+ 
   padding-left: 10%;
   max-width: 80%;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
+
+/* .home .homecontent .aboutLeo .demo-wrap h6{
+  font-size: 1.1rem;
+  font-family:  Helvetica, serif;
+} */
+
+h4{
+  font-size: 1.1rem;
+  /* font-family: Helvetica, Arial, sans-serif; */
+  font-family:  Helvetica, serif;
+}
+
 
 .home #homeHead{
   min-height: 40%;
@@ -244,35 +367,7 @@ text-align: justify;
   font-size: 30px;
 }
 
-/*--------------------------------------------------------
-    Tabs{
 
----------------------------------------------------------*/
-
-.tab-list {  border-bottom: 1px solid #ccc;
-  padding-left: 0;
-  text-align: start;
-  align-items: flex-start;
-  position: fixed;
-  background-color: #000000;
-}
-
-.tab-list-item {
-  display: inline-block;
-  list-style: none;
-  margin-bottom: 1px;
-  background-color: rgb(0, 0, 0);
-  /* padding: 0.5rem 0.75rem; */
-  padding-right: 10%;
-}
-
-.tab-list-active {
-  background-color: rgb(0, 0, 0);
-  border: solid #ccc;
-  border-width: 1px 1px 0 1px;
-  
-  padding-right: 10%;
-}
 
 /*--------------------------------------------------------
      projects view{
@@ -404,69 +499,37 @@ text-align: center;
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  flex-direction: column;
 }
+
+.anecdote .nlcontent{
+
+  flex: 50%;
+}
+
+ /* .anecdote HTMLFlipBook{
+  height: 8px;
+  display:flex;
+  flex:10%;
+}  */
+
+.anecdote #anepge{
+  display: flex;
+  border: solid black;
+  height: 20px;
+  width: 20px;
+  max-height: 20px;
+  /* max-width: 100px;
+  max-height: 10px; */
+}
+
 
  
 
 
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
 
-.footer-is-primary{
-
-  /* position: fixed; */
-  position:fixed;
-
-  left:0;
-  bottom:0;
-  right:0;
-  margin-top: 40px;
-  background-color:#04396c;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  /* background-size: cover; */
-  padding: 10px;
-  margin: 10px;
-  
-}
-
-.social-container {
-  padding-bottom: 20px;
-}
-
-
-a.social {
-  opacity: 50%;
-  margin: 0 1rem;
-  transition: transform 250ms;
-  /* display: inline-block; */
-}
-
-a.social:hover {
-  /* transform: translateY(-2px); */
-  /* overflow:hidden; */
-  opacity: 130%;
-  transform: scale(1.5);
-}
-
-a.youtube {
-  color: #eb3223;
-}
-
-a.facebook {
-  color: #0655ff;
-}
-
-a.linkedin {
-  color: #0667b6;
-}
-
-a.instagram {
-  color: rgb(255, 159, 159);
-}
 
 /* ------------------------------------------------------------------ */
 /* Create new log form */
@@ -575,7 +638,7 @@ a.instagram {
   border: solid black;
   padding: 40px;
   border-width: 1px;
-  background-image: url('./Components/images/ourLogo.png') ;
+  /* background-image: url('./Components/images/ourLogo.png') ; */
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain;
@@ -584,5 +647,43 @@ a.instagram {
 .ourclub h4{
   text-align: justify;
   line-height: 50px;
+}
+
+.awards{
+  text-align: justify;
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  line-height: 50px;
+}
+
+/*--------------------------------------------------------
+    Tabs{
+
+---------------------------------------------------------*/
+
+.tab-list {  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  text-align: start;
+  align-items: flex-start;
+  position: fixed;
+  background-color: #000000;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 1px;
+  background-color: rgb(0, 0, 0);
+  /* padding: 0.5rem 0.75rem; */
+  padding-right: 10%;
+}
+
+.tab-list-active {
+  background-color: rgb(0, 0, 0);
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
   
+  padding-right: 10%;
 }
