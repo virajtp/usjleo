@@ -2,7 +2,7 @@
 
 const Awards = () => {
     return (
-        <div className="awards"  style={{ paddingLeft: "150px", paddingTop:"50px" }}>
+        <div className="awards" >
             <p>
                 <ul  style={{ textAlign: "left", fontSize:"25px" }}>
                     <li>Annual District Conference of Leo District 306 C2 - Invenzo’20

@@ -1,5 +1,6 @@
 
 import { colors, Grid, Row } from '@material-ui/core';
+import logo from '../images/logoOnly.png';
 
 const OurClub = () => {
     return (
@@ -26,6 +27,7 @@ const OurClub = () => {
                 <Grid item xs={12} sm={8} md={8}>
                     <div className="ourlogo">
                         <h2>Our Logo</h2>
+                        <img src={logo} height={200} />
                         <h4>Leading with Experience to seize the Opportunities.
                             We have one goal, one passion: to help those in need.
                             We have reached a critical juncture in our journey within two years of time and a new beginning

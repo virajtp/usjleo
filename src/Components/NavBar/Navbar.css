@@ -5,6 +5,7 @@
   list-style: none;
   justify-content: start;
   margin-right: 1rem;
+  color: blue;
 }
 
 .nav-item {
@@ -19,9 +20,10 @@
   width: 100%;
   height: 80px;
   display: flex;
-  position: absolute;
+  position: fixed;
   background-color: white;
   flex-direction: row;
+  padding-bottom: 20px;
 }
 
 .Navbar .leftside{
@@ -70,6 +72,7 @@
 @media only screen and (max-width: 1200px){
   .Navbar .leftside .Links a{
       font-size: 20px;
+      
   }
   .Navbar .rightside #navlogo{
     height: 68px;
@@ -106,7 +109,7 @@
   }
 
   .Navbar .rightside #navlogo{
-    height: 70px;
+    height: 65px;
 }
 
   .Navbar .leftside #hidden{

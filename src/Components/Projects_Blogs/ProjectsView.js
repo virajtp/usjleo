@@ -23,6 +23,7 @@ const ProjectsView = ({ setCurrentId }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [name, setName] = useState("");
   const [img, setImg] = useState("");
+  const [description, setDescription] = useState("");
 
   return (
     // 
@@ -32,13 +33,13 @@ const ProjectsView = ({ setCurrentId }) => {
       <Grid className={classes.container} container alignItems="stretch" spacing={3}>
         {posts.map((post) => (
           <Grid key={post._id} item xs={12} sm={6} md={4}>
-            <div className="singleProject" onClick={() => { setModalOpen(true); setName(post.title); setImg(post.mainImg); }}>
+            <div className="singleProject" onClick={() => { setModalOpen(true); setName(post.title); setImg(post.mainImg);  setDescription(post.description); }}>
               <Project post={post} setCurrentId={setCurrentId} />
           </div>
           </Grid>
         ))}
       </Grid>
-      {modalOpen && <Modal setOpenModal={setModalOpen} name={name} image={img} />}
+      {modalOpen && <Modal setOpenModal={setModalOpen} name={name} image={img} caption={description} />}
      </div>
     ) 
   );

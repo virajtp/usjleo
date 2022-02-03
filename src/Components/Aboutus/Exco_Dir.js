@@ -1,5 +1,4 @@
 
-import MyPhoto from "./Exco & Dir/userImage.png";
 import {  Grid } from '@material-ui/core';
 import president from "./Exco & Dir/Randunu.jpg";
 import secretary from "./Exco & Dir/Rajinee.png";

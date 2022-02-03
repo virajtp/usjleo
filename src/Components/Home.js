@@ -26,8 +26,9 @@ const Home = () => {
             loop: true,
           }}
         /> */}
-          LEO CLUB OF UNIVERSITY OF SRI JAYEWARDENEPURA
+          LEO CLUB OF DISTRICT 306 C2
         </h1>
+        <h3>UNIVERSITY OF SRI JAYEWARDENEPURA</h3>
       </section>
       {/* <h1 style={{color: "lightblue"}}>UNIVERSITY OF SRI JAYEWARDENEPURA</h1> */}
 
@@ -69,7 +70,7 @@ const Home = () => {
                 <p>
                   
                   <h1>LEOISM</h1>
-                  <h4>Leo Clubs include the young members of Lions Club International. 
+                  <h4 className="homes">Leo Clubs include the young members of Lions Club International. 
                     The Leo Club's mission is to create opportunities for global youth to grow and 
                     contribute as responsible members of their local, national, 
                     and international communities, both individually and collectively.
@@ -81,7 +82,7 @@ const Home = () => {
                      Leadership, Experience, and Opportunity. Thus, the Leo Clubs encourage young leaders to 
                      participate in social services, develop leadership and teamwork skills through the 
                      experiences they gain.</h4>
-
+                    <br/>
                      <h1>LIONS CLUB INTERNATIONAL</h1>
                   <h4>The International Association of Lions Clubs, also known as Lions Club International, 
                     is a non-political service organization founded by Melvin Jones in 1917 in Chicago, 
@@ -95,13 +96,14 @@ const Home = () => {
                      Lions Club International during the COVID-19 pandemic exemplifies this, 
                      demonstrating that ordinary people can achieve remarkable things when they work together 
                      as a team.</h4>
-
+                     <br/>
                      <h1>LEO CLUB OF DISTRICT 306 C2 UNIVERSITY OF SRI JAYEWARDENEPURA</h1>
                   <h4>Leo Club of District 306 C2 University of Sri is a university-based omega Leo club 
                     that belongs to the Leo District C2 of Leo Multiple 306 Sri Lanka. This young club's journey 
                     began on December 11th, 2019. J'pura C2 Leos have completed numerous projects over the years 
                     and have been acknowledged by the district on various occasions for their contributions to 
                     society.</h4>
+                    
                 </p>
               </div>
             </div>
