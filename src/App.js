@@ -22,6 +22,7 @@ import RightBar from "./Components/RightBar";
 import BlogForm from "./Components/Form/BlogForm";
 import BlogsView from "./Components/Projects_Blogs/BlogsView";
 import { getBlogPosts } from "./actions/blogs";
+import Line from "./Components/NavBar/Line";
 
 function App() {
 
@@ -49,7 +50,7 @@ function App() {
     <Router>
       <div className="App">
       
-        <Footer />
+        
         {/* <LeftBar /> */}
         {/* <RightBar /> */}
         {/* <Navbar /> */}
@@ -58,13 +59,15 @@ function App() {
         <br/>
         <br/>
         <div className="content">
-        <hr style={{
+        {/* <Footer /> */}
+        <div className="contents">
+        {/* <hr style={{
                 color: '#000000',
                 backgroundColor: '#000000',
                 height: 0.5,
                 borderColor: '#000000'
-            }} />
-          <Grid container alignItems="stretch" spacing={0} style={{gridColumnStart:"2"}} >
+            }} /> */}
+          <Grid container alignItems="stretch" spacing={1} >
             
             <Grid item xs={12} sm={12} md={9}>
               {/* <div><LeftBar /></div> */}
@@ -125,9 +128,12 @@ function App() {
               <div><LeftBar /></div>
             </Grid>
           </Grid>
+          </div>
         </div>
         {/* <Footer data={this.state.resumeData.main} /> */}
+        <Line/>
         <Navbar />
+        <Footer />
       </div>
     </Router>
   );

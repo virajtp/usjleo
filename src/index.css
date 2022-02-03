@@ -307,7 +307,7 @@ a.instagram {
 .demo-wrap {
   /* overflow:hidden; */
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
   background-image: url('./Components/images/leologo.png' );
   background-repeat: no-repeat;
   background-position: center;
@@ -332,6 +332,13 @@ a.instagram {
   
 }
 
+h4{
+  font-size: 1.1rem;
+
+  /* font-family: Helvetica, Arial, sans-serif; */
+  font-family:  Helvetica, serif;
+}
+
 .home .homecontent{
   /* background-image: url('./Components/images/leologo.png' );
   background-repeat: no-repeat;
@@ -347,24 +354,21 @@ a.instagram {
   align-items: center;
 }
 
-/* .home .homecontent .aboutLeo .demo-wrap h6{
+/* .home .homecontent .aboutLeo .demo-wrap h4{
   font-size: 1.1rem;
+  max-width: 80%;
   font-family:  Helvetica, serif;
 } */
 
-h4{
-  font-size: 1.1rem;
-  /* font-family: Helvetica, Arial, sans-serif; */
-  font-family:  Helvetica, serif;
-}
 
 
 .home #homeHead{
-  min-height: 40%;
-  min-block-size: 45%;
+  /* min-height: 15%;
+  min-block-size: 15%; */
   /* background-image: url('./Components/images/cover.jpg') ; */
+  line-height: 20px;
   color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-size: 40px;
 }
 
 
